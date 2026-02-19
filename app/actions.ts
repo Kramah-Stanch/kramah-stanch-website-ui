@@ -49,7 +49,7 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
 
     try {
         const { error } = await resend.emails.send({
-            from: process.env.CONTACT_FROM_EMAIL || 'Contact Form <onboarding@resend.dev>',
+            from: process.env.CONTACT_FROM_EMAIL || 'Kramah Stanch <contact@kramahstanch.com>',
             to: [process.env.CONTACT_TO_EMAIL || 'ksapmad@gmail.com'],
             subject: `New Contact Form Submission from ${name}`,
             replyTo: email,
