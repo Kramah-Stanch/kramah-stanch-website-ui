@@ -49,10 +49,19 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
 
     try {
         const { error } = await resend.emails.send({
-            from: 'Contact Form <onboarding@resend.dev>', // Use a verified domain in production
-            to: ['delivered@resend.dev'], // Send to the owner email, or dynamic based on env
+            from: process.env.CONTACT_FROM_EMAIL || 'Contact Form <onboarding@resend.dev>',
+            to: [process.env.CONTACT_TO_EMAIL || 'ksapmad@gmail.com'],
             subject: `New Contact Form Submission from ${name}`,
             replyTo: email,
+            html: `
+<h2>New Contact Form Submission</h2>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email}</p>
+<p><strong>Company:</strong> ${company || 'N/A'}</p>
+<hr />
+<p><strong>Message:</strong></p>
+<p>${message}</p>
+            `,
             text: `
 Name: ${name}
 Email: ${email}
