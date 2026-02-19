@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kramah Stanch | Architecting the Intelligent Enterprise",
   description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation. Partner with Kramah Stanch for scalable, secure enterprise solutions.",
+  verification: {
+    google: "HP4SHU71pGBpD1TYqRm_bAUF9DmzG4NVeF0C9XO9xgk",
+  },
 };
 
 export default function RootLayout({
