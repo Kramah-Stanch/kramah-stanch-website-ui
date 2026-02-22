@@ -14,19 +14,19 @@ export default function ServicesPage() {
         {
             title: "Cloud Infrastructure",
             description: "Scalable, secure, and cost-effective cloud solutions on AWS and Azure.",
-            image: "/images/services/cloud-infrastructure.png",
+            image: "/images/services/cloud_infrastructure.png",
             features: ["Cloud Architecture Design", "DevOps & CI/CD", "Serverless Computing", "Cloud Security & Compliance"]
         },
         {
             title: "AI & Intelligence",
             description: "Harness the power of data with advanced analytics and generative AI models.",
-            image: "/images/services/ai-intelligence.png",
+            image: "/images/services/ai_intelligence.png",
             features: ["Generative AI Solutions", "Predictive Analytics", "Natural Language Processing", "Computer Vision"]
         },
         {
             title: "Custom Engineering",
             description: "Bespoke software solutions tailored to your unique business challenges.",
-            image: "/images/services/custom-engineering.png",
+            image: "/images/services/custom_engineering.png",
             features: ["Microservices Architecture", "API First Development", "Legacy Modernization", "High-Performance Web Apps"]
         },
         {
@@ -38,7 +38,7 @@ export default function ServicesPage() {
         {
             title: "Data Strategy",
             description: "Turning raw data into strategic assets for better decision making.",
-            image: "/images/services/data-strategy.png",
+            image: "/images/services/data_strategy.png",
             features: ["Data Warehousing", "Business Intelligence", "Data Governance", "Big Data Pipelines"]
         }
     ]
