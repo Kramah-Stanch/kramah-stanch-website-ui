@@ -15,8 +15,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const getBaseUrl = () => {
+  if (process.env.NEXT_PUBLIC_APP_URL) {
+    return process.env.NEXT_PUBLIC_APP_URL;
+  }
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return "http://localhost:3000";
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://kramahstanch.com"),
+  metadataBase: new URL(getBaseUrl()),
   title: "Kramah Stanch | Architecting the Intelligent Enterprise",
   description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation. Partner with Kramah Stanch for scalable, secure enterprise solutions.",
   verification: {
@@ -27,14 +40,6 @@ export const metadata: Metadata = {
     description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation.",
     url: "/",
     siteName: "Kramah Stanch",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Kramah Stanch",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -42,7 +47,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kramah Stanch | Architecting the Intelligent Enterprise",
     description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation.",
-    images: ["/logo.png"],
   },
 };
 
