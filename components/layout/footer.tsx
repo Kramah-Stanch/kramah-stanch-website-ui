@@ -30,12 +30,12 @@ export function Footer() {
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold">Company</h3>
                         <Link href="/about" className="text-sm text-muted-foreground hover:underline">About Us</Link>
-                        <Link href="#" className="text-sm text-muted-foreground hover:underline">Careers</Link>
+                        <Link href="/contact" className="text-sm text-muted-foreground hover:underline">Careers</Link>
                         <Link href="/contact" className="text-sm text-muted-foreground hover:underline">Contact</Link>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold">Legal</h3>
-                        <Link href="#" className="text-sm text-muted-foreground hover:underline">Privacy Policy</Link>
+                        <Link href="/privacy" className="text-sm text-muted-foreground hover:underline">Privacy Policy</Link>
                         <Link href="/terms" className="text-sm text-muted-foreground hover:underline">Terms of Service</Link>
                     </div>
                 </div>
