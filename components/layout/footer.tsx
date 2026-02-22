@@ -8,12 +8,14 @@ export function Footer() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-2">
-                            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                                <Zap className="h-4 w-4" />
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="Kramah Stanch Logo"
+                                className="h-6 w-auto object-contain"
+                            />
                             <span className="text-lg font-bold">Kramah Stanch</span>
                         </div>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-muted-foreground mt-2">
                             Architecting the intelligent enterprise with SAP, AWS, and AI solutions.
                         </p>
                         <div className="text-sm text-muted-foreground mt-4 space-y-1">
