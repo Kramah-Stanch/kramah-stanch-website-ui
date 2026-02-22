@@ -36,7 +36,7 @@ export function Footer() {
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold">Legal</h3>
                         <Link href="#" className="text-sm text-muted-foreground hover:underline">Privacy Policy</Link>
-                        <Link href="#" className="text-sm text-muted-foreground hover:underline">Terms of Service</Link>
+                        <Link href="/terms" className="text-sm text-muted-foreground hover:underline">Terms of Service</Link>
                     </div>
                 </div>
                 <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t pt-8 md:flex-row">
