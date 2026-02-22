@@ -16,10 +16,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://kramahstanch.com"),
   title: "Kramah Stanch | Architecting the Intelligent Enterprise",
   description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation. Partner with Kramah Stanch for scalable, secure enterprise solutions.",
   verification: {
     google: "HP4SHU71pGBpD1TYqRm_bAUF9DmzG4NVeF0C9XO9xgk",
+  },
+  openGraph: {
+    title: "Kramah Stanch | Architecting the Intelligent Enterprise",
+    description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation.",
+    url: "/",
+    siteName: "Kramah Stanch",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Kramah Stanch",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kramah Stanch | Architecting the Intelligent Enterprise",
+    description: "Premier consulting for SAP transformations, AWS cloud infrastructure, and AI-driven automation.",
+    images: ["/logo.png"],
   },
 };
 
