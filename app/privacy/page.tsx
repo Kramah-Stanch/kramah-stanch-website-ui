@@ -170,14 +170,15 @@ export default function PrivacyPage() {
                             </div>
                             <div>
                                 <h3 className="font-bold">Phone</h3>
-                                <p className="text-muted-foreground">+44 7629683523</p>
+                                <p className="text-muted-foreground">00447529683523</p>
                             </div>
                             <div>
                                 <h3 className="font-bold">Address</h3>
                                 <p className="text-muted-foreground">
                                     21 Glebe Road<br />
                                     Solihull<br />
-                                    B91 2LX England
+                                    B91 2LX<br />
+                                    England<br />
                                 </p>
                             </div>
                         </div>
