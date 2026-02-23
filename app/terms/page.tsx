@@ -124,7 +124,8 @@ export default function TermsPage() {
                                 <p className="text-muted-foreground">
                                     21 Glebe Road<br />
                                     Solihull<br />
-                                    B91 2LX England
+                                    B91 2LX<br />
+                                    England
                                 </p>
                             </div>
                         </div>

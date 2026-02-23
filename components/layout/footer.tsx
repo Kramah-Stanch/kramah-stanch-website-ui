@@ -20,7 +20,8 @@ export function Footer() {
                         </p>
                         <div className="text-sm text-muted-foreground mt-4 space-y-1">
                             <p>21 Glebe Road, Solihull</p>
-                            <p>B91 2LX England</p>
+                            <p>B91 2LX</p>
+                            <p>England</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
